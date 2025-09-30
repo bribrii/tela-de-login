@@ -2,11 +2,11 @@
 
 :root {
     --cor-primaria: #1E2A38;       
-    --cor-secundaria: #F9D342;     
-    --cor-rosa: #FF6F91;            
-    --cor-rosa-hover: #D85A75;    
-    --cor-borda: rgba(30, 42, 56, 0.8);
-    --cor-placeholder: #7DA0CA;     
+    --cor-secundaria: #393E46;     
+    --cor-rosa: #FA812F;            
+    --cor-rosa-hover: #DD0303;    
+    --cor-borda: rgba(30, 42, 56, 0.5);
+    --cor-placeholder: #948979;     
     --cor-branco: #FFFFFF;
 }
 
@@ -28,10 +28,10 @@ body {
 }
 
 .container {
-    border: 2px solid var(--cor-borda);
+    border: 1px solid var(--cor-borda);
     width: 450px;
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -55,7 +55,7 @@ body {
     width: 100%;
     background: transparent;
     border: none;
-    border: 2px solid var(--cor-borda);
+    border: 1px solid var(--cor-borda);
     border-radius: 10px;
     font-size: 16px;
     color: var(--cor-primaria);
