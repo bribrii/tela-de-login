@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --cor-primaria: #1E2A38;       
+    --cor-secundaria: #F9D342;     
+    --cor-rosa: #FF6F91;            
+    --cor-rosa-hover: #D85A75;    
+    --cor-borda: rgba(30, 42, 56, 0.8);
+    --cor-placeholder: #7DA0CA;     
+    --cor-branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background: url("https://i.pinimg.com/736x/e9/5c/14/e95c14d3ad88771b77b03d27ad54aec2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid var(--cor-borda);
+    width: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 37px;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-container input {
+    outline: none;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid var(--cor-borda);
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--cor-primaria);
+    padding: 10px 45px 10px 15px;
+
+}
+
+.input-container input::placeholder {
+    color: var(--cor-placeholder);
+}
+
+.input-container img {
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    margin-top: 3px;
+    margin-right: -7px;
+    height: 22px;
+}
+
+.input-container a {
+    font-size: 15px;
+    margin: 5px 0 0 5px;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.input-container a:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor-rosa);
+    border: none;
+    border-radius: 10px;
+    color: var(--cor-branco);
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.submit-button:hover {
+    background-color: var(--cor-rosa-hover);
+}
+
+.container-forget {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container-forget p {
+    font-size: 16px;
+    color: var(--cor-primaria);
+    font-weight: 500;
+    
+}
+
+.container-forget p a {
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-forget p a:hover {
+    text-decoration: underline;
+}
